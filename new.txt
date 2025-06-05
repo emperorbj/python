@@ -1,0 +1,20 @@
+[
+    {
+        "book_name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "ISBN": "978-0743273565"
+    },
+    {
+        "book_name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "ISBN": "978-0446310789"
+    },
+    {
+        "book_name": "1984",
+        "author": "George Orwell",
+        "ISBN": "978-0451524935"
+    }
+]
+
+
+cohere_api_key=JNSFlaZw8ccLGXnxzfL4x8e0wRkDxCRpMRgfTGWv
