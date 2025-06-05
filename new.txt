@@ -14,6 +14,14 @@
         "author": "George Orwell",
         "ISBN": "978-0451524935"
     }
+]\
+
+
+
+
+[
+    ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+grpcio-status 1.73.0rc1 requires protobuf<7.0.0,>=6.30.0, but you have protobuf 5.29.5 which is incompatible.
 ]
 
 
