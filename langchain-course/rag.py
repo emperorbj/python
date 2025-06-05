@@ -30,3 +30,4 @@ if not os.path.exists(persistent_path):
     
     loader = TextLoader(file_path)
     document = loader.load()
+    processed = document
