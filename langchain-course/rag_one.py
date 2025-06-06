@@ -35,15 +35,8 @@ if not os.path.exists(persistent_path):
     print(f"\nNumber of chunks of document: {len(docs)}")
     print(f"Sample chunk:\n---\n{docs[0].page_content}\n---")
     
-    # splitter = CharacterTextSplitter(chunk_size = 1000, chunk_overlap = 0)
-    # docs = splitter.split_documents(document)
-    
-    # print("\n ----Document embedding----")
-    # print(f"\n Number of chunks of document:{len(docs)} ")
-    # print(f"sample chunk\n {docs[0].page_content}")
-    
-    dummy_text_embedding = embeddings.embed_query("test")
-    embedding_dimension = len(dummy_text_embedding)
+    # dummy_text_embedding = embeddings.embed_query("test")
+    # embedding_dimension = len(dummy_text_embedding)
     
     
     vector_store = FAISS.from_documents(docs, embeddings)

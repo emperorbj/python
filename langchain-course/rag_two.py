@@ -46,7 +46,6 @@ prompt = ChatPromptTemplate.from_template("""
 You are an AI assistant tasked with answering questions based on the provided context.
 Carefully read the context and use only the information within it to answer the question.
 If the answer cannot be found in the context, state that clearly and do not make up information.
-
 <context>
 {context}
 </context>
@@ -95,32 +94,3 @@ while True:
     #         print(f"Metadata: {doc.metadata}")
     #     print("-" * 100)
     print("-" * 120)
-
-
-
-
-
-
-
-# while True:
-#     user_query = input("Please add your query(or type exit to leave):").strip()
-#     if user_query.lower() == "exit":
-#         print(f"Thanks leaving now")
-#         break
-#     if not user_query:
-#         print("Please you have to add an input")
-#         continue
-    
-#     print(f"The query you want to make is: {user_query}")
-#     retrieved_docs = vector_store.similarity_search(user_query,k=3)
-    
-#     if retrieved_docs:
-#         print(f"\n Found {len(retrieved_docs)} in chunks from the documents on the user query")
-#         for i,docs in enumerate(retrieved_docs):
-#             print(f"{i + 1} {docs.page_content}")
-#             if docs.metadata:
-#                 print(f"This the metadata for {docs.metadata}")
-                
-#             print("-"*120)
-#     else:
-#         print("No relevant information found in this document")

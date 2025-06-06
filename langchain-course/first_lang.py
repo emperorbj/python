@@ -1,9 +1,8 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.messages import HumanMessage,AIMessage,SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnableMap,RunnableLambda,RunnableParallel
+from langchain_core.runnables import RunnableLambda,RunnableParallel
 
 load_dotenv()
 
