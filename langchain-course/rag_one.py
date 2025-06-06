@@ -35,9 +35,6 @@ if not os.path.exists(persistent_path):
     print(f"\nNumber of chunks of document: {len(docs)}")
     print(f"Sample chunk:\n---\n{docs[0].page_content}\n---")
     
-    # dummy_text_embedding = embeddings.embed_query("test")
-    # embedding_dimension = len(dummy_text_embedding)
-    
     
     vector_store = FAISS.from_documents(docs, embeddings)
     vector_store.save_local(persistent_path)
